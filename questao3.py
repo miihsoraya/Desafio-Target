@@ -14,10 +14,10 @@ for i in range(len(data)):
     maior = data[i]['valor']
   if data[i]['valor'] <= menor:
     menor = data[i]['valor']
-  soma += data[i]['valor']
+  soma += data[i]['valor']    #somando tdos os valores da lista
   print(i+1,": ",data[i]['valor'])  #Printando lista
   
-media = soma/(len(data)-8)
+media = soma/(len(data)-8)    #Media desconsiderando finais de semana
 print("\nMenor valor de faturamento do mês: ",menor)
 print("Maior faturamento do mês foi: ",maior)
 print('Média dos faturamentos: {:.2f}'.format(media))
